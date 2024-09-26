@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>company|leadingcompany</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<header class="header">
+        <h1><a href="index.html">
+                <div class="logo"><img src="img/logo.svg" width="88" height="50" alt=""/></div>
+        </a>
+        </h1>
+    
+    <div class="nav-button">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    
+        <nav>
+                <ul class="menu">
+                        <li><a href="index.html">HOME</a></li>
+                        <li class="current"><a href="company.html">COMPANY</a></li>
+                        <li><a href="member.html">MEMBER</a></li>
+                        <li><a href="recruit.html">RECRUIT</a></li>
+                        <li><a href="#footer">ACCESS</a></li>
+                </ul>
+        </nav>
+</header>
+<main>
+        <div class="mv">
+                <img src="img/mv-copany.jpg" width="1920" height="750" alt=""/>
+                <h1>COMPANY<br><span class="text-small">会社概要</span></h1>
+        </div>
+        
+        <div class="inner">
+                <section class="company">
+<div class="box">
+        <dl>
+                                <div class="text">
+                                        <dt>会社名</dt>
+                                        <dd>leading Company株式会社(leading Company KK.)</dd>
+                                        <dt>設立</dt>
+                                        <dd>2001年(平成13年)4月20日</dd>
+                                        <dt>資本金</dt>
+                                        <dd>10,000,000円</dd>
+                                        <dt>従業員数</dt>
+                                        <dd>45名（協力スタッフ含）</dd>
+                                </div>
+    </dl>
+                <p><img src="img/companyimage1.png" alt=""/></p>
+        </div>
+
+<div class="box">
+                <dl>
+                                <div class="text">
+                                        <dt>代表取締役</dt>
+                                        <dd>田中太郎</dd>
+                                        <dt>本社所在地</dt>
+                                        <dd>〒164-8787　<br>
+                                                東京都中野区東中野4-2-3</dd>
+                                        <dt>事業内容</dt>
+                                        <dd>ソフトウェア開発／パッケージ開発／<br>
+                                                システムインテグレーション／<br>
+                                                ITビジネス開発／コンサルティング<br>
+                                                WEBシステム開発／コンサルティング／<br>
+                                                WEBデザイン・HTML制作</dd>
+                                </div>
+                </dl>
+                <p><img src="img/companyimage2.png" alt=""/></p>
+        </div>
+<div class="box">
+                <dl>
+                                <div class="text">
+                                        <dt>株主</dt>
+                                        <dd>田中　太郎</dd>
+                                        <dt>主要取引先銀行</dt>
+                                        <dd>みずほ銀行</dd>
+                                </div>
+                </dl>
+                <p><img src="img/companyimage3.png" alt=""/></p>
+        </div>
+</section>
+        </div>
+</main>
+<footer id="footer">
+        <div class="box-area">
+                <div class="box">
+                        <p>Leading Company株式会社</p>
+                        <p>TEL 03-XXXX-XXXX</p>
+                        <p>MAIL　leadingcompany@abc.ne                </p>
+                </div>
+                <div class="box">
+                        <p>〒164-8787　東京都中野区東中野4-2-3</p>
+                        <p>JR中央・総武線「東中野駅」東口（北側）下車 徒歩1分</p>
+                        <p>都営地下鉄　大江戸線「東中野駅」A1出口下車 徒歩1分        </p>
+                      
+                </div>
+        </div>
+            
+    
+        <nav>
+                <ul>
+                        <li><a href="#">プライバシーポリシー</a></li>
+                        <li><a href="#">利用規約</a></li>
+                        <li><a href="#">免責事項</a></li>
+                        <li><a href="#">サイトマップ</a></li>
+               
+        </ul>
+        </nav>
+        <p class="copyright">Copyright © 職業訓練課題</p>
+        
+</footer>
+
+<script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
+<script>
+   //スクロールメニュー
+   $(window).scroll(function() {
+    if ($(window).scrollTop() > 100) {
+        $('.header').addClass('sticky');
+    } else {
+        $('.header').removeClass('sticky');
+    }
+});
+
+  $(function(){
+    //.nav-buttonをクッリクしたときの設定
+    $(".nav-button").on("click",function(){
+      $("body").toggleClass("menu-open");
+    });
+
+    $(document).on("click",".menu-open nav a",function(){
+      $(".nav-button").trigger("click");
+    });
+  });
+</script>
+
+</body>
+</html>

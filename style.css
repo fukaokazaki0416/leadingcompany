@@ -1,0 +1,360 @@
+@charset "utf-8";
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior:  smooth;
+}
+img{
+    vertical-align:  bottom;
+    max-width: 100%;
+    height: auto;
+}
+body{
+    font-size: 1.8rem;
+    background-color: #2f2e2e;
+    color: #fafafa;
+    line-height: 1.8;
+}
+a{
+    text-decoration: none;
+}
+header{
+    padding: 0 10px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    max-width: 120px;
+}
+.sticky{
+    background:rgba(58, 58, 58, 0.6) ;
+  }
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav a{
+    color: #fbd00d;
+}
+nav a:hover {
+    color: rgba(98,217,236);
+}
+nav li{
+    padding-right: 10px;
+    font-size: 18px;
+    color: rgba(98,217,236);
+}
+.current a{
+    color: rgba(98,217,236);
+
+}
+.mv{
+    position: relative;
+}
+.mv h1{
+    font-size: clamp(1.5rem, 0.35rem + 5.75vw, 4.375rem);
+    position: absolute;
+    top: 45%;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  text-align: center;
+  line-height: 1;
+
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  text-shadow: #3a3a3a 1px 0 10px;
+}
+.text-small{
+    font-size: 3rem;
+}
+.maintext{
+    text-align: center;
+    font-size: 2.4rem;
+    margin-top: 50px;
+    font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+.inner{
+    max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+     font-family: "Shippori Mincho", serif;
+        font-weight: 500;
+        font-style: normal;
+      
+}
+section{
+    margin-top: 100px;
+}
+h2{
+    margin-bottom: 50px;
+}
+
+/* mainページ */
+.sec1 h3 {
+    border-bottom: 1px solid #fafafa;
+    text-align: center;
+    padding-bottom: 25px;
+    margin-bottom: 50px;
+}
+.sec1 .box{
+    padding-bottom: 100px;
+    padding-top: 30px;
+}
+.sec1 h4{
+    border-bottom: 1px solid #fff;
+    width: 300px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.sec2 .box-area{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.sec2 .box{
+    border-top: 1px solid #fff;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 300px;
+}
+
+
+footer{
+    color: #2f2e2e;
+    text-align: left;
+    widows: 100%;
+    background-color: #fbd00d;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 100px;
+}
+footer a{
+color: #2f2e2e;
+}
+footer nav a:hover{
+    text-decoration: underline;
+}
+footer .box-area{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+footer nav{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+footer .box:nth-child(1){
+    margin-right: 50px;
+}
+.copyright {
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+/* Companyページ */
+.company .box {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.company .box:nth-child(2) {
+    flex-direction: row-reverse;
+}
+.company .text dt {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
+}
+.company .text dd {
+    margin-bottom: 5rem;
+    margin-top: 1rem;
+}
+.company .text {
+    width: 400px;
+}
+
+/* Memberページ */
+.member .box {
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+.member .box img{
+    max-width: 250px;
+}
+.member .text {
+    width: 70%;
+    overflow: visible;
+}
+.member .box:nth-child(2n-1) {
+    flex-direction: row-reverse;
+}
+.member h3 {
+    font-size: 2.4rem;
+    border-bottom: 1px solid #fafafa;
+}
+.member h4 {
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+
+/* Recruitページ */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    margin-left: auto;
+    margin-right: auto;
+}
+table th, table td {
+    padding: 1rem 4rem;
+    border: 2px solid #fafafa;
+}
+th {
+    text-align: left;
+    white-space: nowrap;
+}
+
+@media (max-width:650px){
+nav{
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background: #3a3a3a;
+    padding-top: 100px;
+    transition: 0.8s;
+}
+nav .menu{
+    display: block;
+    padding-bottom: 50px;
+    text-align: center;
+}
+nav .menu a{
+    font-size: 30px;
+    padding: 30px 0;
+}
+header h1{
+    z-index: 1;
+}
+.nav-button{
+    width: 70px;
+    height: 50px;
+  margin-left: auto;
+  position: relative;
+  }
+  .nav-button span{
+   width: 30px;
+   height: 2px;
+   background: #fafafa;
+   position: absolute;
+   left: 20px;
+   transition: 0.5s;
+  }
+  .nav-button span:nth-child(1){
+    top: 12px;
+  }
+  .nav-button span:nth-child(2){
+    top: 23px;
+  }
+  .nav-button span:nth-child(3){
+    top: 34px;
+  }
+  .menu-open nav{
+    left: 0;
+  }
+  .menu-open li{
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .menu-open .nav-button span:nth-child(1){
+    top: 23px;
+    transform: rotate(315deg);
+  }
+  .menu-open .nav-button span:nth-child(2){
+    width: 0;
+    left: 50%;
+  }
+  .menu-open .nav-button span:nth-child(3){
+    top:23px;
+    transform: rotate(-315deg);
+  }
+  .menu-open nav a:hover{
+    color: #4ab5bc;
+  }
+  header span{
+    z-index: 1;
+  }
+
+  .maintext{
+    font-size: 1.8rem;
+    margin-top: 20px;
+  }
+  /* トップページ */
+  .sec2 .box-area{
+    justify-content: space-around;
+}
+  /* Companyページ */
+  .company .box {
+   flex-direction: column;
+}
+.company .box:nth-child(2) {
+    flex-direction: column;
+}
+.company .text{
+   margin: 0 auto;
+}
+.company .box p{
+    text-align: center;
+}
+
+/* Memberページ */
+    .member .box {
+        flex-direction: column;
+    }
+    .member .box:nth-child(2n-1) {
+        flex-direction: column;
+    }
+    .member .text{
+        width: 100%;
+        margin-top: 15px;
+    }
+    /* recruitページ */
+    table th, table td{
+        display: block;
+        text-align: center;
+    }
+    table th {
+        padding: 10px 0;
+        background-color: #4ab5bc;
+    }
+    table td{
+        padding: 20px 0;
+    }
+    .member .box img{
+        margin: 0 auto;
+    }
+}
